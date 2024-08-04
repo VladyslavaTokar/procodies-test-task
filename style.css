@@ -1,0 +1,288 @@
+.container {
+    max-width: 1200px;
+    padding: 16px;
+    margin: auto;
+}
+
+.section {
+    margin-bottom: 48px;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+}
+
+h1 {
+    font-size: 52px;
+}
+
+h2 {
+    font-size: 48px;
+    padding: 0;
+    margin: 0;
+}
+
+h3 {
+    font-size: 42px;
+    padding: 0;
+    margin: 0;
+}
+
+h4 {
+    font-size: 32px;
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+}
+
+/* form section */
+
+.form {
+    padding: 24px;
+    margin-top: 24px;
+    border: 1px solid #DBDBDB;
+    border-radius: 20px;
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+input {
+    font-size: 16px;
+    padding: 12px 16px;
+    border: 1px solid #ADADAD;
+    border-radius: 10px;
+    width: 100%;
+}
+
+input:focus,
+input:active,
+input:focus-visible {
+    border-color: #2D473E;
+    border-width: 1px;
+}
+
+button {
+    background-color: #006340;
+    border: 1px solid #006340;
+    text-transform: uppercase;
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 16px;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 600;
+    transition: background 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #fff;
+    color: #006340;
+}
+.input-wrapper {
+    display: flex;
+    gap: 16px;
+    width: 100%;
+}
+
+.form-wrapper {
+    display: flex;
+    gap: 16px;
+    color: #293632;
+    align-items: center;
+}
+
+.form-wrapper h1 {
+    font-size: 52px;
+    font-weight: 900;
+    margin: 0 0 8px 0;
+    padding: 0;
+    line-height: 1;
+    color: #293632;
+}
+.form-wrapper h4 {
+    text-align: center;
+    color: #2D473E;
+}
+.form-wrapper p {
+    font-size: 22px;
+    color: #293632;
+}
+
+.form-wrapper .images-small {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.payment-images {
+    display: flex;
+    gap: 16px;
+    margin: auto;
+}
+
+.images {
+    position: relative;
+}
+
+.price {
+    background-color: #006340;
+    border-radius: 50%;
+    min-width: 160px;
+    min-height: 160px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: -16px;
+    right: -5px;
+}
+
+.price .value {
+    font-size: 38px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.price {
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+}
+
+/* section 2-3 // blocks with text */
+
+h2 {
+    color: #2D473E;
+    margin: auto;
+    text-align: center;
+}
+
+.subtitle {
+    color: #006340;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 32px;
+}
+
+.body-wrapper {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+.body-text h3 {
+    font-weight: 600;
+    color: #293632;
+    margin-bottom: 24px;
+}
+
+.body-text h3 span {
+    color: #006340;
+}
+
+.body-text p {
+    margin-bottom: 16px;
+}
+
+/* faq section  */
+
+.faq {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.grey {
+    background-color: #F5F5F5;
+}
+
+.blocks {
+    display: flex;
+    gap: 32px;
+}
+
+.blocks .title {
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.blocks p {
+    font-size: 10px;
+    line-height: 1.6;
+}
+
+.blocks{
+    color: #2D473E;
+}
+
+.billing .title {
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+@media (max-width: 1024px) {
+    .form-wrapper {
+        flex-direction: column-reverse;
+    }
+
+    .body-wrapper {
+        flex-direction: column;
+    }
+
+    img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .blocks {
+        flex-direction: column;
+    }
+
+    .form-wrapper h1 {
+        font-size: 35px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+    
+    h3 {
+        font-size: 25px;
+    }
+    
+    h4 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 425px) {
+    .payment-images {
+        flex-direction: column;
+    }
+
+    .form-wrapper .images-small {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }   
+}
